@@ -4,7 +4,7 @@
 ### Contributor
 
 [Junjyeon Kim](https://github.com/Jungyeonkim114)    
-[Seungbum Lee]    
+[Seungbum Lee](https://github.com/Seungbeom-Lee)    
 [Chanyang Seo](https://github.com/chan8616)   
 [Sein Park](https://github.com/SEIN126)   
 
