@@ -36,8 +36,8 @@
         |- best_GAT_model.pt
         |- best_GraphSage_model.pt
     |- practice
-        |- toy_gcn.py
-        |- 
+        |- toy_gcn.ipynb
+        |- plotting graphs.ipynb
 </code>
 </pre>
 
@@ -46,7 +46,14 @@
 ```bash
 python main.py
 ```
-- Else, you want to select mode
+```bash
+❗❗❗caution❗❗❗
+- Because of our training dataset size(bigger than 300MB..), we can not commit ours.
+- We only commit test dataset(nx9.pt , nx6.pt) in directory ./data. 
+- So you can only 'test' by using our weight file(.pt) in directory ./ckpt
+- If you want to train our model, please issue me on above tap. I will send you our training sets.    
+```
+- Else, you want to select mode   
 ```bash
 python main.py --help
 ```
