@@ -35,6 +35,9 @@
         |- best_GFN2_model.pt
         |- best_GAT_model.pt
         |- best_GraphSage_model.pt
+    |- practice
+        |- toy_gcn.py
+        |- 
 </code>
 </pre>
 
