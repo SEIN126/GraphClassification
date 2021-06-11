@@ -313,7 +313,7 @@ def main(epochs, training=False, save_pt=False, save_fg=False, printed=False):
                                              )
         print('===> model train complete')
         
-    # test file 생성
+    # make test loader
     loader_gcn = DataLoader(gcn_testset, len(gcn_testset), shuffle=False)
     loader_gfn = DataLoader(gfn_testset, len(gfn_testset), shuffle=False)
     loader_gat = DataLoader(gat_testset, len(gat_testset), shuffle=False)
@@ -322,10 +322,11 @@ def main(epochs, training=False, save_pt=False, save_fg=False, printed=False):
     loaders = [loader_gcn, loader_gfn, loader_gfn, loader_gat, loader_gs]
     models = [gcn_model, gfn_model1, gfn_model2, gat_model, gs_model]
     
-    
+    # make test result
     result = test_ensembled(models, loaders, device, printed=False)
     print('===> model test complete')
-    
+
+    # make test file
     write_result(result)
     print('===> check the test file!')
     
